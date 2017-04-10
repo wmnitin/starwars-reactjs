@@ -1,0 +1,31 @@
+{
+  "name": "reacthello",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "local-web-server": {
+    "port": 8101,
+    "forbid": "*.json"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ws | webpack -d --watch",
+    "build": "webpack -p"
+  },
+  "author": "Nitin Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-react": "^6.23.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "throttle-debounce": "^1.0.1"
+  },
+  "devDependencies": {
+    "local-web-server": "^1.2.7",
+    "react-hot-loader": "^1.3.1",
+    "webpack": "^2.3.2"
+  }
+}
